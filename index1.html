@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>form with CSS</title>
+
+        <style>
+            form{background-color:violet;
+                   }
+            ol>li{color:royalblue;}
+            ul>li{color:slategray;}
+        
+            table{background-color:tan;
+                  }
+        </style>
+    </head>
+
+    <body>
+        <form>
+        <fieldset>
+        <legend>Persoal information</legend>
+        <p>
+            First Name
+            <input type="text" name="firstname" required />
+            <br />
+            Last name
+            <input type="text" name="lastname" required />
+        </p>
+        </fieldset>
+        <fieldset>
+        <legend>Contact</legend>
+        <p>
+            Email
+            <input type="email" name="email" size="50" required />
+            <br />
+            Mobile
+            <input type="text" name="mobile" size="25" required />
+            <br />
+            Adress
+            <textarea rows="3" colns="10" required>Enter your adress</textarea>
+
+        </p>
+        </fieldset>
+        <p>
+            Gender
+            <label><input type="radio" checked name="gender" value="m" />Male</label>
+            <label><input type="radio" name="gender" value="f" />Female</label>
+
+        </p>
+        <p>
+            Favourite games
+            <input type="checkbox" name="games"/>Cricket
+            <input type="checkbox" name="gender" />Football
+            <input type="checkbox" name="gender" />Basketball
+        </p>
+        <p>
+            Nationality
+            <select name="Countries" required >
+            <option value="Pakistan" >Pakistan</option>
+            <option value="India">India</option>
+            <option value="South Africa">South Africa</option>
+            <option value="England">England</option>
+            </select>
+            
+        </p>
+        <textarea rows="6" colons="15" >Enter your comments</textarea>
+        <br />
+        <input type="submit" value="Submit" />
+        </form>
+
+        <blockquote>
+            <b>Never Give up.</b>
+        </blockquote>
+
+        <p>
+            <h1>PIAIC offers following Courses</h1>
+            <ol>
+                <li>Artificial Intelligence</li>
+                <ul>
+                    <h3>Quarter 1</h3>
+                    <li>AI for everyone</li>
+                    <li>Python</li>
+                    <h3>Quarter 2</h3>
+                    <li>Pandas</li>
+                    <li>NumPy</li>
+                    <li>Tenser flow</li>
+                    <h3>Quarter 3</h3>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>javaScript</li>
+                    <h3>Quarter 4</h3>
+                    <li>Advance AI</li>
+                </ul>
+                <li>Cloud Native Computing</li>
+                <ul>
+                    <h3>Quarter 1</h3>
+                    <li>Introduction</li>
+                    <li>Linux</li>
+                    <li>Docker</li>
+                    <li>Kubernetes</li>
+                    <h3>Quarter 2</h3>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>React</li>
+                    <h3>Quarter 3</h3>
+                    <li>React Native</li>
+                    <li>Mango DB</li>
+                    <li>Node js</li>
+                    <h3>Quarter 4</h3>
+                    <li>Advance</li>
+                </ul>
+            </ol>
+        </p>
+
+        <fieldset>
+        <table  cellpadding="10" cellspacing="5", border="2">
+            <h2>Student Performance</h2>
+
+            <tr>
+                <td>Student Name</td>
+                <td>Roll No</td>
+                <td>Course</td>
+                <td>Current Position</td>
+            </tr>
+
+            <tr>
+                <td>Faizan Ahmed</td>
+                <td>PIAIC 1350</td>
+                <td>Cloud Native</td>
+                <td>MD at safes</td>
+            </tr>
+            <tr> 
+                <td>Hafiz Zahid</td>
+                <td>PIAIC 2670</td>
+                <td>Cloud Native</td>
+                <td>Software Development lead</td>
+            </tr>
+        </table>
+        </fieldset>
+    </body>
+</html>
