@@ -28,6 +28,6 @@ jobs:
         node-version: 12.16.3
     - name: install Surge
       run: npm install -g surge
-    - name: Run Serge
+    - name: Run Surge
       run: surge ./ http://bootcampform.surge.sh/ --token ${{secrets.TOKEN_SURGE}}
  
